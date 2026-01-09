@@ -1,0 +1,8 @@
+from sqlalchemy import Column, Integer, String
+from database import Base
+
+class Questions(Base):
+    __tablename__ = "questions"
+    id = Column(Integer, primary_key=True, index=True)
+    question_text = Column(String, nullable=False)
+    answer_text = Column(String, nullable=False)  # New answer field

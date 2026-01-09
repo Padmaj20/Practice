@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Questions Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Questions Manager</h1>
+
+  <div class="form-container">
+    <input type="text" id="question" placeholder="Enter question">
+    <input type="text" id="answer" placeholder="Enter answer">
+    <button onclick="addQuestion()">Add Question</button>
+  </div>
+
+  <table id="questionsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Question</th>
+        <th>Answer</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Questions will be inserted here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
